@@ -1,0 +1,28 @@
+{
+  "name": "oneohtrix",
+  "version": "1.0.0",
+  "description": "Oneohtrix Point Never",
+  "author": "Corey Tegeler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coreytegeler/oneohtrix/issues"
+  },
+  "homepage": "https://github.com/coreytegeler/oneohtrix#readme"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "sass --watch assets/sass/style.scss:assets/css/style.css",
+    "watch-coffee": "watchify assets/coffee/script.coffee -o assets/js/script.js -dv",
+    "watch": "npm run watch-sass & npm run watch-coffee",
+    "build-sass": "sass assets/sass/style.scss:assets/css/style.css --style compressed",
+    "build-coffee": "browserify assets/coffee/script.coffee | uglifyjs -mc > assets/js/script.js",
+    "build": "npm run build-sass & npm run build-coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coreytegeler/oneohtrix.git"
+  },
+  "dependencies": {
+    
+  }
+}
